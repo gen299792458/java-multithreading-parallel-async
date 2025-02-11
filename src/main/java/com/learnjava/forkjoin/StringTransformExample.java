@@ -14,6 +14,7 @@ public class StringTransformExample {
     public static void main(String[] args) {
 
         stopWatch.start();
+
         List<String> resultList = new ArrayList<>();
         List<String> names = DataSet.namesList();
         log("names : "+ names);
@@ -22,6 +23,7 @@ public class StringTransformExample {
             String newValue = addNameLengthTransform(name);
             resultList.add(newValue);
         });
+
         stopWatch.stop();
         log("Final Result : "+ resultList);
         log("Total Time Taken : "+ stopWatch.getTime());
