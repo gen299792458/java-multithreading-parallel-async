@@ -26,6 +26,6 @@ class ParallelStreamsTest {
 
 //        then
         assertEquals(4, result.size());
-        result.forEach(name->assertTrue(name.matches("[0-9]-[A-Za-z]+")));
+        result.forEach(name -> assertTrue(name.matches("[0-9]-[A-Za-z]+")));
     }
 }
