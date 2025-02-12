@@ -14,8 +14,8 @@ public class ParallelStreams {
     public List<String> stringTransform(List<String> inputList) {
 
        return inputList
-                .stream()
-//                .parallelStream()
+//                .stream()
+                .parallelStream()
                 .map(this::addNameLengthTransform)
                 .collect(Collectors.toList());
     }
